@@ -1,1 +1,33 @@
-It works!
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Urban Development - Website design and development solutions.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style type="text/css">
+      body{background: #141414 url(bg.jpg) repeat-x; margin:0px;}
+      #top-panel{background: #141414 url(bg.jpg) repeat-x; margin:0px; display:block; position:relative; width:100%; height:11px; border-bottom:10px; z-index:30;}
+      #header-logo{background: transparent url(header-logo.png) 300px 35px no-repeat;width:800px; height:318px; position:absolute; left:0px; top:-400px; text-align:center; overflow:hidden; z-index:5;}
+      #header-logo-glow{background: transparent url(header-logo-glow.png) center 0px no-repeat;width:800px; height:305px; position:absolute; left:0px; top:0px;}  
+      #header-logo h2{width:800px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
+      #header-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(slogan.png) center center no-repeat; bottom:-35px;}
+    </style>
+    <!--[if IE]>
+      <style type="text/css">
+        #header-logo-glow{display:none;}
+      </style>
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="ga.js"></script>
+  </head>
+  <body>
+    <div id="top-panel"></div>
+    <div id="header-logo">
+      <div id="header-logo-glow"></div>
+      <h2 class="slogan">Website design and development solutions.</h2>
+    </div>
+    <script type="text/javascript">
+      $.getScript('urbandev-home.js');
+    </script>
+  </body>
+</html>

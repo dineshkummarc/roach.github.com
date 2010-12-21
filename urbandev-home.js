@@ -10,7 +10,7 @@ $('#urbandev-logo').animate(
  1500
  ).animate(
    {
-     opacity: 0.6
+     opacity: 0.5
    },
    1000,
    function(){

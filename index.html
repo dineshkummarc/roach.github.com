@@ -4,15 +4,23 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title>Urban Development - Website design and development solutions.</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:light,regular' rel='stylesheet' type='text/css'>
     <style type="text/css">
-      body{background: #141414 url(bg.jpg) repeat-x; margin:0px;}
-      #page-container{display:block; position:relative; margin:0px auto; width:800px;overflow:hidden;}
-      #header{display:block; height:318px;}
-      #top-panel{background: #141414 url(bg.jpg) repeat-x; margin:0px; display:block; position:relative; width:100%; height:11px; border-bottom:10px; z-index:30;}
-      #header-logo{background: transparent url(header-logo.png) 300px 35px no-repeat;width:800px; height:318px; position:absolute; left:0px; top:-400px; text-align:center; overflow:hidden; z-index:5;}
-      #header-logo-glow{background: transparent url(header-logo-glow.png) center 0px no-repeat;width:800px; height:305px; position:absolute; left:0px; top:0px;}  
-      #header-logo h2{width:800px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
-      #header-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(slogan.png) center center no-repeat; bottom:-35px;}
+      body{margin:0px; background-color: #141414; font-family:Verdana, Sans-Serif;}
+      body a{text-decoration:none;}
+      #page-container{display:block; position:relative; margin:0px auto; width:100%;overflow:hidden; background: transparent url(img/bg.jpg) repeat; top:-14px}
+      #content-wrapper{display:block; position:relative; margin:0px auto; width:960px;overflow:hidden;}
+      #main-animation{display:block; position:relative; height:410px; width:960px; margin:0px auto;}
+      #top-pane{background: transparent url(img/top-pane-bg.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:25px; z-index:30;}
+      ul#menu{position:absolute; left: 52px; top:-12px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:50px 0px 0px 0px; text-align:center;}
+      ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
+      ul#menu li a{color:#956800; line-height:60px; font-size:20px; font-family: 'Josefin Sans', serif;}
+      #urbandev-logo{background: transparent url(img/header-logo.png) 380px 35px no-repeat;width:960px; height:318px; position:absolute; left:0px; top:-400px; text-align:center; overflow:hidden; z-index:5;}
+      #urbandev-logo-glow{background: transparent url(img/header-logo-glow.png) center 0px no-repeat;width:960px; height:305px; position:absolute; left:0px; top:0px;}  
+      #urbandev-logo h2{width:960px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
+      #urbandev-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(img/slogan.png) center center no-repeat; top:350px;}
+      #page-content{display:block; position:relative; margin:0px auto; border:1px solid #956800; height:0px; width:900px; display:none;}
+      #bottom-pane{background: transparent url(img/bottom.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:65px; z-index:30; top:-32px;}
     </style>
     <!--[if IE]>
       <style type="text/css">
@@ -23,14 +31,28 @@
     <script type="text/javascript" src="ga.js"></script>
   </head>
   <body>
+    <div id="top-pane">
+    </div>
     <div id="page-container">
-      <div id="header">
-        <div id="top-panel"></div>
-        <div id="header-logo">
-          <div id="header-logo-glow"></div>
-          <h2 class="slogan">Website design and development solutions.</h2>
+      <div id="content-wrapper">
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Our Portfolio</a></li>
+        <li><a href="#">Current Projects</a></li>
+        <li><a href="#">Contact Information</a></li>
+        </ul>
+        <div id="page-content">
+        </div>
+        <div id="main-animation">
+          <div id="urbandev-logo">
+            <div id="urbandev-logo-glow"></div>
+            <h2 class="slogan">Website design and development solutions.</h2>
+          </div>
         </div>
       </div>
+    </div>
+    <div id="bottom-pane">
     </div>
     <script type="text/javascript">
       $.getScript('urbandev-home.js');

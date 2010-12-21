@@ -1,22 +1,30 @@
-$('#header-logo, #header-logo-glow, #header-logo .slogan').css('opacity', 0); //IE sucks
+// Define opacity for header element (MS filter properties)
+$('#urbandev-logo, #urbandev-logo-glow, #urbandev-logo .slogan').css('opacity', 0);
 
-$('#header-logo').animate(
+// Begin animation functions
+$('#urbandev-logo').animate(
  {
  opacity: 0.2,
- top: [0, 'swing']
+ top: [100, 'swing']
  },
  1500
  ).animate(
    {
-     opacity: 0.65
+     opacity: 0.7
    },
    1000,
    function(){
-    $('#header-logo .slogan').animate({bottom: 20, opacity: 0.7}, 500, function(){
-    $('#header-logo-glow').animate({opacity: 0.5},50).animate({opacity: 0.2},1000);
-      var t=setInterval("logoPulse();",11000);
+    $('#urbandev-logo .slogan').animate({top: [275, 'swing'], opacity: 0.7}, 500, function(){
+    $('#urbandev-logo-glow').animate({opacity: 0.5},250).animate({opacity: 0.2},1000);
+      var t=setInterval("logoPulse();",8000);
     });
   }
-);
-      
-function logoPulse(){$('#header-logo-glow').animate({opacity: 0.5},2000).animate({opacity: 0.2},4000);};
+);      
+
+function logoPulse(){$('#urbandev-logo-glow').animate({opacity: 0.5},1500).animate({opacity: 0.2},4000);};
+
+// End animation functions
+
+// Content slider
+
+// End content slider

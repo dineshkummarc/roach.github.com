@@ -16,7 +16,7 @@ $('#urbandev-logo').animate(
    function(){
     $('#urbandev-logo .slogan').animate({top: [275, 'swing'], opacity: 0.7}, 500, function(){
 	    $('#urbandev-logo-glow').animate({opacity: 0.6},250).animate({opacity: 0.4},1000);
-	    $('ul#menu').animate({top: -12},1000);	
+	    $('ul#menu').animate({top: -12},750);	
       // var t=setInterval("logoPulse();",8000);
     });
   }

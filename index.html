@@ -12,15 +12,21 @@
       #content-wrapper{display:block; position:relative; margin:0px auto; width:960px;overflow:hidden;}
       #home-content{display:block; position:relative; height:410px; width:960px; margin:0px auto;}
       #top-pane{background: transparent url(img/top-pane-bg.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:25px; z-index:30;}
-      ul#menu{position:absolute; z-index:32; left: 52px; top:-12px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:50px 0px 0px 0px; text-align:center;}
-      ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
-      ul#menu li a{color:#956800; line-height:60px; font-size:20px; font-family: 'Josefin Sans', Helvetica; font-weight:lighter; text-shadow:#956800 0px 2px 4px;}
+      #content-wrapper ul#menu{position:absolute; z-index:32; left: 52px; top:-12px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:50px 0px 0px 0px; text-align:center;}
+      #content-wrapper ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
+      #content-wrapper ul#menu li a{color:#956800; line-height:60px; font-size:20px; font-family: 'Josefin Sans', Helvetica; font-weight:lighter; text-shadow:#956800 0px 2px 4px;}
       #urbandev-logo{background: transparent url(img/header-logo.png) 380px 35px no-repeat;width:960px; height:318px; position:absolute; left:0px; top:-400px; text-align:center; overflow:hidden; z-index:5;}
       #urbandev-logo-glow{background: transparent url(img/header-logo-glow.png) center 0px no-repeat;width:960px; height:305px; position:absolute; left:0px; top:0px;}  
       #urbandev-logo h2{width:960px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
       #urbandev-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(img/slogan.png) center center no-repeat; top:350px;}
       #page-content{display:block; position:relative; margin:0px auto; border:1px solid #956800; height:0px; width:900px; display:none;}
-      #bottom-pane{background: transparent url(img/bottom.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:65px; z-index:30; top:-32px;}
+      #bottom-pane{background: transparent url(img/bottom.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:230px; padding:30px 0px 0px 0px; z-index:30; top:-32px;}
+      #bottom-pane #footer-menu{background: transparent url(img/footer.png) repeat-x; margin:0px; display:block; position:relative; width:834px; height:225px; margin:0px auto;padding:20px 15px 0px 15px;}
+      #bottom-pane #footer-menu .menu{list-style:none; padding: 0px; margin:0px; border-right:#3c2d0b;float:left; width:208px;}
+      #bottom-pane #footer-menu h2.footer-label{font:bold 12px helvetica;color:#3c2d0b;margin:10px 0px 0px 0px; text-transform:uppercase;}
+      #bottom-pane #footer-menu p{font:normal 12px helvetica; line-height:20px; color:#3c2d0b;margin:0px;}
+      #bottom-pane #footer-menu ul.menu li {height:20px;text-indent:10px;}
+      #bottom-pane #footer-menu ul.menu li a{font:normal 12px helvetica; line-height:20px; color:#3c2d0b;}
     </style>
     <!--[if IE]>
       <style type="text/css">
@@ -35,12 +41,12 @@
     </div>
     <div id="page-container">
       <div id="content-wrapper">
-      <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Our Portfolio</a></li>
-        <li><a href="#">Current Projects</a></li>
-        <li><a href="#">Contact Information</a></li>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Portfolio</a></li>
+          <li><a href="#">Current Projects</a></li>
+          <li><a href="#">Contact Information</a></li>
         </ul>
         <div id="page-content">
         </div>
@@ -53,6 +59,35 @@
       </div>
     </div>
     <div id="bottom-pane">
+      <div id="footer-menu">
+        <div class="menu">
+          <h2 class="footer-label">Who we are</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis felis scelerisque est scelerisque sed eleifend est congue. Curabitur varius risus vel neque accumsan sagittis. Nulla eleifend dolor ac mi mollis molestie. Etiam id nunc ut massa vulputate commodo vel nec sapien. Donec id dui ac est faucibus.
+          </p>
+        </div>
+        <ul class="menu">
+          <h2 class="footer-label">Our Services</h2>
+          <li><a href="#">Website Design</a></li>
+          <li><a href="#">Website Development</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+        <ul class="menu">
+          <h2 class="footer-label">Our Services</h2>
+          <li><a href="#">Website Design</a></li>
+          <li><a href="#">Website Development</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+        <ul class="menu">
+          <h2 class="footer-label">Our Services</h2>
+          <li><a href="#">Website Design</a></li>
+          <li><a href="#">Website Development</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
     </div>
     <script type="text/javascript">
       $.getScript('urbandev-home.js');

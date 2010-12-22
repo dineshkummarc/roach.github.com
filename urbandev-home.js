@@ -14,7 +14,7 @@ $('#urbandev-logo').animate(
    },
    1000,
    function(){
-    $('h2.slogan').animate({top: [275, 'swing'], opacity: 0.7}, 500, function(){
+    $('h2.slogan').animate({top: [275, 'swing'], opacity: 0.6}, 500, function(){
 		    $('#urbandev-logo-glow').animate({opacity: 0.2},150, function(){
 		    $('#urbandev-logo-glow').animate({opacity: 0.1},50).animate({opacity: 0.4},1000);			
 		});

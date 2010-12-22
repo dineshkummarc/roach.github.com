@@ -8,10 +8,13 @@
     <style type="text/css">
       body{margin:0px; background-color: #141414; font-family:Verdana, Sans-Serif;}
       body a{text-decoration:none;}
+      body a img{border:none;}
       #page-container{display:block; position:relative; margin:0px auto; width:100%;overflow:hidden; background: transparent url(img/bg.jpg) repeat; top:-16px}
       #content-wrapper{display:block; position:relative; margin:0px auto; width:960px;overflow:hidden;}
       #home-content{display:block; position:relative; height:410px; width:960px; margin:0px auto;}
-      #top-pane{background: transparent url(img/orange-glow.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:25px; z-index:30;}
+      #top-pane{background: transparent url(img/orange-glow.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:65px; z-index:30;}
+      #top-pane #top-banner{width:960px;margin:0px auto;text-indent:75px;}
+      #top-pane #top-banner a#top-logo{margin:10px 0px;display:block;}
       #content-wrapper ul#menu{position:absolute; z-index:32; left: 52px; top:-17px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:50px 0px 0px 0px; text-align:center;}
       #content-wrapper ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
       #content-wrapper ul#menu li a{color:#956800; line-height:60px; font-size:20px; font-family: 'Josefin Sans', Helvetica; font-weight:lighter; text-shadow:#956800 0px 2px 4px;}
@@ -39,6 +42,9 @@
   </head>
   <body>
     <div id="top-pane">
+      <div id="top-banner">
+        <a id="top-logo" href="#"><img src="img/toplogo.png"/></a>
+      </div>
     </div>
     <div id="page-container">
       <div id="content-wrapper">

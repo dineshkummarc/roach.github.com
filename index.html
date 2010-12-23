@@ -9,22 +9,23 @@
     <script type="text/javascript" src="ga.js"></script>
     <style type="text/css">
       body{margin:0px; background-color: #141414; font-family:Verdana, Sans-Serif;}
-      body a{text-decoration:none;}
+      body a{text-decoration:none;outline:none;}
       body a img{border:none;}
-      #page-container{display:block; position:relative; margin:0px auto; width:100%;overflow:hidden; background: transparent url(img/bg.jpg) repeat; top:-16px}
-      #content-wrapper{display:block; position:relative; margin:0px auto; width:960px;overflow:hidden;}
+      #page-container{display:block; position:relative; margin:0px auto; width:100%; height:420px; overflow:hidden; background: transparent url(img/bg.jpg) repeat; top:-16px}
+      #content-wrap{display:block; position:relative; margin:0px auto; width:960px; top:-110px;overflow:hidden;}
       #home-content{display:block; position:relative; height:410px; width:960px; margin:0px auto;}
       #top-pane{background: transparent url(img/orange-glow.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:65px; z-index:30;}
       #top-pane #top-banner{width:960px;margin:0px auto;text-indent:75px;}
       #top-pane #top-banner a#top-logo{margin:10px 0px;display:block;}
-      #content-wrapper ul#menu{position:absolute; z-index:32; left: 52px; top:-17px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:50px 0px 0px 0px; text-align:center;}
-      #content-wrapper ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
-      #content-wrapper ul#menu li a{color:#ffae00; line-height:60px; font-size:20px; font-family: 'Josefin Sans', Helvetica; font-weight:lighter; text-shadow:#ffae00 0px 1px 4px;}
+      #menu-wrap{display:block; position:relative; margin:0px auto; width:960px; height:110px; overflow:hidden;}
+      #menu-wrap ul#menu{position:absolute; z-index:32; left: 52px; top:-17px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:50px 0px 0px 0px; text-align:center;}
+      #menu-wrap ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
+      #menu-wrap ul#menu li a{color:#ffae00; line-height:60px; font-size:20px; font-family: 'Josefin Sans', Helvetica; font-weight:lighter; text-shadow:#ffae00 0px 1px 4px;}
       #urbandev-logo{background: transparent url(img/header-logo.png) 380px 35px no-repeat;width:960px; height:318px; position:absolute; left:0px; top:-400px; text-align:center; overflow:hidden; z-index:5;}
       #urbandev-logo-glow{background: transparent url(img/header-logo-glow.png) center 0px no-repeat;width:960px; height:305px; position:absolute; left:0px; top:0px;}  
       #urbandev-logo h2{width:960px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
       #urbandev-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(img/slogan.png) center center no-repeat; top:350px;}
-      #page-content{display:block; position:relative; margin:0px auto; border:1px solid #956800; height:0px; width:900px; display:none;}
+      #page-content{background-color: #000;display: none;height: 400px;margin: 120px auto 0px auto;position: relative;width: 900px;}
       #bottom-pane{background: transparent url(img/orange-glow.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:230px; padding:30px 0px 0px 0px; z-index:30; top:-32px;}
       #bottom-pane #footer-menu{background: transparent url(img/footer.png) repeat-x; margin:0px; display:block; position:relative; width:864px; height:225px; margin:0px auto;padding:20px 0px 0px 0px;}
       #bottom-pane #footer-menu .menu{list-style:none; padding: 0px; margin:0px; border-right:#3c2d0b;float:left; width:150px;}
@@ -55,21 +56,23 @@
       </div>
     </div>
     <div id="page-container">
-      <div id="content-wrapper">
+      <div id="menu-wrap">
         <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Our Portfolio</a></li>
-          <li><a href="#">Current Projects</a></li>
-          <li><a href="#">Contact Information</a></li>
+          <li><a href="test.html#500">Home</a></li>
+          <li><a href="#our-services">Our Services</a></li>
+          <li><a href="#our-portfolio">Our Portfolio</a></li>
+          <li><a href="#current-projects">Current Projects</a></li>
+          <li><a href="#contact-us">Contact Information</a></li>
         </ul>
-        <div id="page-content">
-        </div>
+      </div>
+      <div id="content-wrap">
         <div id="home-content">
           <div id="urbandev-logo">
             <div id="urbandev-logo-glow"></div>
             <h2 class="slogan">Website design and development solutions.</h2>
           </div>
+        </div>
+        <div id="page-content">
         </div>
       </div>
     </div>

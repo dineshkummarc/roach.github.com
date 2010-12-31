@@ -25,7 +25,7 @@ body a img{border:none;}
 #bottom-pane #footer-menu .our-story p{font:normal 12px helvetica; line-height:20px; color:#999999;margin:0px;}
 #bottom-pane #footer-menu .menu ul{list-style:none; padding: 0px; margin:0px;}
 #bottom-pane #footer-menu .menu ul li {height:20px;}
-#bottom-pane #footer-menu .menu ul li a{font:normal 12px helvetica; line-height:20px; color:#734e00;white-space:nowrap;}
+#bottom-pane #footer-menu .menu ul li, #bottom-pane #footer-menu .menu ul li a{font:normal 12px helvetica; line-height:20px; color:#734e00;white-space:nowrap;}
 #bottom-pane #footer-menu .menu.bottom-left , #bottom-pane #footer-menu .menu.bottom-right {width:300px; margin:10px 0px 0px 0px;}
 #bottom-pane #footer-menu .menu.bottom-right {width:150px;}
 #bottom-pane #footer-menu .menu.bottom-left ul li, #bottom-pane #footer-menu .menu.bottom-right ul li {display:inline;height:20px;float:left;}

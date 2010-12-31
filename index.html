@@ -23,7 +23,7 @@
     <div id="page-container">
       <div id="menu-wrap">
         <ul id="menu">
-          <li><a href="home.html#420">Home</a></li>
+          <li><a href="home.html#420" class="home-link">Home</a></li>
           <li><a href="our-services.html#600">Our Services</a></li>
           <li><a href="#our-portfolio">Our Portfolio</a></li>
           <li><a href="#current-projects">Current Projects</a></li>
@@ -38,7 +38,7 @@
     <div id="bottom-pane">
       <div id="footer-menu">
         <div class="our-story">
-          <h2 class="footer-label">Who we are</h2>
+          <h2 class="footer-label">Who are we?</h2>
           <p></p>
         </div>
         <div class="menu">
@@ -60,12 +60,12 @@
           </ul>
         </div>
         <div class="menu">
-          <h2 class="footer-label">Contact</h2>
+          <h2 class="footer-label">Contact Us</h2>
           <ul>
-            <li><a href="#">Info: info@urbandev.net</a></li>
-            <li><a href="#">Sales: sales@urbandev.net</a></li>
-            <li><a href="#">Support: support@urbandev.net</a></li>
-            <li><a href="#">Phone: (775) 234-8487</a></li>
+            <li>Info: <a href="#">info@urbandev.net</a></li>
+            <li>Sales: <a href="#">sales@urbandev.net</a></li>
+            <li>Support: <a href="#">support@urbandev.net</a></li>
+            <li>Phone: <a href="#">(775) 234-8487</a></li>
           </ul>
         </div>
         <div class="menu bottom-left">
@@ -84,7 +84,9 @@
       </div>
     </div>
     <script type="text/javascript">
-      $.getScript('urbandev-home.js');
+    $.getScript('urbandev.js', function() {
+      loadContent($('.home-link').attr('href'),$('.home-link').attr('hash'))
+    });
     </script>
   </body>
 </html>

@@ -9,9 +9,12 @@ $('#menu-wrap ul#menu li a').bind('click', function() {
 	return false
 });
 
-function loadContent(url, height){	
+var stopProcess = false;
+function loadContent(url, height){
+	$('#page-container').stop();
 	$('#page-content').fadeOut('fast', function(){
-		$('#page-container').animate({height: height},500, function(){
+		$('#page-container').animate({height: height},500,
+			function(){
 			$('#page-content').load(url, function() {
 				$('#page-content').fadeIn('fast');
 				if(url = "home.html#400"){logoInit()};
@@ -34,11 +37,11 @@ function logoInit(){
 
 	// Animate UD logo
 	$('#urbandev-logo').animate(
-	   { opacity: 0.6
-	   },
-	   500,
-	   function(){
-	    $('h2.slogan').animate({top: [275, 'swing'], opacity: 0.6}, 500, function(){
+		{ opacity: 0.6
+		},
+		500,
+		function(){
+			$('h2.slogan').animate({top: [275, 'swing'], opacity: 0.6}, 500, function(){
 				$('#urbandev-logo-glow').animate({opacity: 0.2},150, function(){
 					$('#urbandev-logo-glow').animate({opacity: 0.1},50).animate({opacity: 0.4},1000);			
 				});
@@ -50,10 +53,10 @@ function logoInit(){
 
 function logoPulse()
 {
-  function pulseAnimation()
-  {
+	function pulseAnimation()
+	{
 		$('#urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000);
-  }
+	}
 	if(!logoTimer){ var logoTimer = setTimeout(pulseAnimation, 5000)};
 }
 // End animation functions

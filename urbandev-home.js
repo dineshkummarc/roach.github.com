@@ -11,7 +11,7 @@ $('#menu-wrap ul#menu li a').bind('click', function() {
 
 function loadContent(url, height){	
 	$('#page-content').fadeOut('fast', function(){
-		$('#page-container').animate({height: height},1000, function(){
+		$('#page-container').animate({height: height},500, function(){
 			$('#page-content').load(url, function() {
 				$('#page-content').fadeIn('fast');
 				if(url = "home.html#400"){logoInit()};

@@ -22,8 +22,8 @@ function loadContent(url, height){
 }
 // End content handling
 
-var logoTimer;
 // Begin animation functions
+var logoTimer;
 function logoInit(){
 	// Define opacity for logo elements (MS filter properties)
 	$('#urbandev-logo, #urbandev-logo-glow, #urbandev-logo .slogan').css('opacity', 0);
@@ -32,10 +32,12 @@ function logoInit(){
 		{ opacity: 0.6 },
 		500,
 		function(){
+			clearInterval(logoTimer);
+			$('h2.slogan').stop(true,false);
 			$('h2.slogan').animate({top: [275, 'swing'], opacity: 0.6}, 500, function(){
 				$('#urbandev-logo-glow').animate({opacity: 0.2},150, function(){
 					$('#urbandev-logo-glow').animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
-						var logoTimer = setTimeout(logoPulse, 5000);
+						logoTimer = setInterval(logoPulse, 6000);
 					})
 				})
 	    })

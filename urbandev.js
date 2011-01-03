@@ -2,7 +2,7 @@
 
 var currentPage = '';
 
-$('#menu-wrap ul#menu li a.inline-content').click(function (e) {
+$('a.inline-content').click(function (e) {
 	var requestedURI = $(this).attr('href');
 	loadContent(requestedURI)
 	e.preventDefault();

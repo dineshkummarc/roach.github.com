@@ -38,7 +38,7 @@ function logoInit(){
 		function(){
 			clearInterval(logoTimer);
 			$('h2#home-slogan').stop(true,false);
-			$('h2#home-slogan').animate({top: [375, 'swing'], opacity: 0.6}, 500, function(){
+			$('h2#home-slogan').animate({top: [375, 'swing'], opacity: 0.8}, 500, function(){
 				$('#home-urbandev-logo-glow').animate({opacity: 0.2},150, function(){
 					$('#home-urbandev-logo-glow').animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
 						logoTimer = setInterval(logoPulse, 6000);

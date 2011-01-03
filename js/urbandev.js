@@ -30,17 +30,17 @@ function loadContent(URL){
 var logoTimer;
 function logoInit(){
 	// Define opacity for logo elements (MS filter properties)
-	$('#urbandev-logo, #urbandev-logo-glow, #urbandev-logo .slogan').css('opacity', 0);
+	$('#home-urbandev-logo, #home-urbandev-logo-glow, #home-urbandev-logo .slogan').css('opacity', 0);
 	// Animate UD logo
-	$('#urbandev-logo').animate(
+	$('#home-urbandev-logo').animate(
 		{ opacity: 0.6 },
 		500,
 		function(){
 			clearInterval(logoTimer);
-			$('h2.slogan').stop(true,false);
-			$('h2.slogan').animate({top: [275, 'swing'], opacity: 0.6}, 500, function(){
-				$('#urbandev-logo-glow').animate({opacity: 0.2},150, function(){
-					$('#urbandev-logo-glow').animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
+			$('h2#home-slogan').stop(true,false);
+			$('h2#home-slogan').animate({top: [375, 'swing'], opacity: 0.6}, 500, function(){
+				$('#home-urbandev-logo-glow').animate({opacity: 0.2},150, function(){
+					$('#home-urbandev-logo-glow').animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
 						logoTimer = setInterval(logoPulse, 6000);
 					})
 				})
@@ -51,6 +51,6 @@ function logoInit(){
 
 function logoPulse()
 {
-	$('#urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000);
+	$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000);
 }
 // End animation functions

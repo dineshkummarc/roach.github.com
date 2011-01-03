@@ -15,11 +15,20 @@ body a img{border:none;}
 #menu-wrap ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
 #menu-wrap ul#menu li a{color:#d99400; font:normal 15px Helvetica; line-height:60px; text-transform:uppercase;}
 #menu-wrap ul#menu li a:hover{color:#ffae00;}
-/* logo and logo container */
-#urbandev-logo{background: transparent url(../img/header-logo.png) 380px 35px no-repeat;width:960px; height:318px; position:absolute; left:0px; top:95px; text-align:center; overflow:hidden; z-index:5;}
-#urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center 0px no-repeat;width:960px; height:305px; position:absolute; left:0px; top:0px;}  
-#urbandev-logo h2{width:960px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
-#urbandev-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(../img/slogan.png) center center no-repeat; top:350px;}
+/* home page content */
+#home-promo{margin-left:35px;}
+#home-promo, #home-twitter-container{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:left; top:140px;}
+#home-promo h3.promo-header, #home-twitter-container h3.twitter-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:27px; padding:0px 15px;}
+#home-twitter-container #home-twitter-widget .twtr-hd{display:none;}
+#home-twitter-container #home-twitter-widget .twtr-doc {margin-left:13px;}
+#home-twitter-container #home-twitter-widget .twtr-widget .twtr-tweet {border:none;}
+#home-twitter-container #home-twitter-widget #twtr-widget-1 .twtr-tweet a, #home-twitter-container #home-twitter-widget .twtr-widget .twtr-tweet p{font:normal 12px helvetica;}
+#home-twitter-container #home-twitter-widget .twtr-ft{display:none;}
+#home-logo-container{display:block; position:relative; width:265px; float:left;}
+#home-urbandev-logo{background: transparent url(../img/header-logo.png) center center no-repeat; position:relative; margin:0px auto; width:265px; height:294px; top:95px; text-align:center; overflow:hidden; z-index:5;}
+#home-urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center center no-repeat;width:265px; height:294px; margin:0px auto;}  
+h2#home-slogan{width:600px; position:absolute; left:180px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
+#home-slogan{text-indent:-9999px; overflow:hidden; background: transparent url(../img/slogan.png) center center no-repeat; top:450px;}
 /* footer and footer menu bar */
 #bottom-pane{background: transparent url(../img/orange-glow.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:230px; padding:30px 0px 0px 0px; z-index:30; top:-32px;}
 #bottom-pane #footer-menu{background: transparent url(../img/footer.png) repeat-x; margin:0px; display:block; position:relative; width:864px; height:225px; margin:0px auto;padding:20px 0px 0px 0px;}

@@ -1,7 +1,49 @@
-<div id="urbandev-logo">
-    <div id="urbandev-logo-glow"></div>
-    <h2 class="slogan">Website design and development solutions.</h2>
+<div id="home-promo">
+  <h3 class="promo-header">Featured Projects</h3>
 </div>
+<div id="home-logo-container">
+  <div id="home-urbandev-logo">
+      <div id="home-urbandev-logo-glow"></div>
+  </div>
+</div>
+<div id="home-twitter-container">
+  <h3 class="twitter-header">Recent Tweets</h3>
+  <div id="home-twitter-widget">
+  </div>
+</div>
+<h2 id="home-slogan">Website design and development solutions.</h2>
 <script type="text/javascript">
   logoInit();
+
+  $.getScript('js/twitter-widget.js', function() {
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 2,
+      interval: 6000,
+      width: 290,
+      height: 165,
+      theme: {
+        shell: {
+          background: 'transparent',
+          color: '#FFF'
+        },
+        tweets: {
+          background: 'transparent',
+          color: '#FFF',
+          links: '#FFF'
+        }
+      },
+      features: {
+        scrollbar: true,
+        loop: true,
+        live: false,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        behavior: 'all'
+      }
+    }).render().setUser('urbandev').start();
+  })
+
 </script>

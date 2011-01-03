@@ -4,28 +4,25 @@ var currentPage = '';
 
 $('#menu-wrap ul#menu li a').click(function (e) {
 	var requestedURI = $(this).attr('href');
-	if(parseUri(requestedURI).file!=currentPage){
-		// Asumption: all of the internal links are relative. Verifty the requested URI (uri.host should be undefined)
-		if(!parseUri(requestedURI).host){
-			loadContent(requestedURI)
-		}
-	};
+	loadContent(requestedURI)
 	e.preventDefault();
 });
 
 function loadContent(URL){
 	var page = parseUri(URL).file;
 	var height = parseUri(URL).queryKey.height;
-	$('#page-container').stop(true,true);
-	$('#page-content').fadeOut('fast', function(){
-		$('#page-container').animate({height: height}, 500,
-			function(){
-			$('#page-content').load(page, function() {
-				currentPage = page;
-				$('#page-content').fadeIn('fast');
+	if(parseUri(requestedURI).file!=currentPage){
+		$('#page-container').stop(true,true);
+		$('#page-content').fadeOut('fast', function(){
+			$('#page-container').animate({height: height}, 500,
+				function(){
+				$('#page-content').load(page, function() {
+					currentPage = page;
+					$('#page-content').fadeIn('fast');
+				})
 			})
 		})
-	})
+	};	
 }
 // End content handling
 

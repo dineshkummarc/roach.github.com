@@ -1,20 +1,27 @@
 // Content handling
-var currentPage = "";
-$('#menu-wrap ul#menu li a').bind('click', function() {
-	var requestedPage = $(this).attr("href");
-	var requestedHeight = $(this).attr("hash").substring(1);
-	if(requestedPage!=currentPage){loadContent(requestedPage, requestedHeight)};
-	return false
+
+var currentPage = '';
+
+$('#menu-wrap ul#menu li a').click(function (e) {
+	var requestedURI = $(this).attr('href');
+	if(parseUri(requestedURI).file!=currentPage){
+		// Asumption: all of the internal links are relative. Verifty the requested URI (uri.host should be undefined)
+		if(!parseUri(requestedURI).host){
+			loadContent(requestedURI)
+		}
+	};
+	e.preventDefault();
 });
 
-function loadContent(url, height){
+function loadContent(URL){
+	var page = parseUri(URL).file;
+	var height = parseUri(URL).queryKey.height;
 	$('#page-container').stop(true,true);
 	$('#page-content').fadeOut('fast', function(){
-		$('#page-container').animate({height: height},
-			500,
+		$('#page-container').animate({height: height}, 500,
 			function(){
-			$('#page-content').load(url, function() {
-				currentPage = url;
+			$('#page-content').load(page, function() {
+				currentPage = page;
 				$('#page-content').fadeIn('fast');
 			})
 		})
@@ -40,8 +47,8 @@ function logoInit(){
 						logoTimer = setInterval(logoPulse, 6000);
 					})
 				})
-	    })
-	  }
+			})
+		}
 	)
 }
 

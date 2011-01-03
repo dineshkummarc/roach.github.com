@@ -2,7 +2,7 @@
 
 var currentPage = '';
 
-$('#menu-wrap ul#menu li a').click(function (e) {
+$('#menu-wrap ul#menu li a.inline-content').click(function (e) {
 	var requestedURI = $(this).attr('href');
 	loadContent(requestedURI)
 	e.preventDefault();
@@ -11,7 +11,7 @@ $('#menu-wrap ul#menu li a').click(function (e) {
 function loadContent(URL){
 	var page = parseUri(URL).file;
 	var height = parseUri(URL).queryKey.height;
-	if(parseUri(requestedURI).file!=currentPage){
+	if(parseUri(URL).file!=currentPage){
 		$('#page-container').stop(true,true);
 		$('#page-content').fadeOut('fast', function(){
 			$('#page-container').animate({height: height}, 500,
@@ -22,7 +22,7 @@ function loadContent(URL){
 				})
 			})
 		})
-	};	
+	}
 }
 // End content handling
 

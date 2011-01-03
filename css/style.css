@@ -34,7 +34,7 @@ h2#home-slogan{width:600px; height:27px; position:absolute; left:180px; margin:0
 #bottom-pane #footer-menu .menu{border-right:#3c2d0b;float:left; width:150px;}
 #bottom-pane #footer-menu .our-story{background: transparent url(../img/our-story-bg.png) repeat-x; width:308px; height:200px; list-style:none; padding: 10px 20px 0px 20px; margin:5px 13px 0px 10px; border-right:#3c2d0b;float:left;}
 #bottom-pane #footer-menu h4.footer-label{font:bold 13px helvetica;color:#805700;margin:10px 0px 0px 0px; text-transform:uppercase;}
-#bottom-pane #footer-menu .our-story h2.footer-label{font:bold 13px helvetica;color:#b3b3b3;margin:0px 0px 0px 0px; text-transform:uppercase;}
+#bottom-pane #footer-menu .our-story h4.footer-label{font:bold 13px helvetica;color:#b3b3b3;margin:0px 0px 0px 0px; text-transform:uppercase;}
 #bottom-pane #footer-menu .our-story p{font:normal 12px helvetica; line-height:20px; color:#999999;margin:0px;}
 #bottom-pane #footer-menu .menu ul{list-style:none; padding: 0px; margin:0px;}
 #bottom-pane #footer-menu .menu ul li {height:20px;}

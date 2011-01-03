@@ -3,28 +3,28 @@ body{margin:0; background-color: #141414; font-family:Verdana, Sans-Serif;}
 body * {margin:0; padding:0; border:0; font:normal 15px Helvetica;}
 body a{text-decoration:none;outline:none;}
 body a img{border:none;}
-#page-container{display:block; position:relative; margin:0px auto; width:100%; height:420px; overflow:hidden; background: transparent url(img/bg.jpg) repeat; top:-16px}
+#page-container{display:block; position:relative; margin:0px auto; width:100%; height:420px; overflow:hidden; background: transparent url(../img/bg.jpg) repeat; top:-16px}
 #content-wrap{display:block; position:relative; margin:0px auto; width:960px; top:-110px;overflow:hidden;}
 #page-content{display: none;position:relative; height:410px; width:960px; margin:0px auto;}
 /* header and menu bar */
-#top-pane{background: transparent url(img/orange-glow.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:65px; z-index:30;}
+#top-pane{background: transparent url(../img/orange-glow.png) center bottom repeat-x; margin:0px; display:block; position:relative; width:100%; height:65px; z-index:30;}
 #top-pane #top-banner{width:960px;margin:0px auto;text-indent:75px;}
 #top-pane #top-banner a#top-logo{margin:10px 0px;display:block;}
 #menu-wrap{display:block; position:relative; z-index:32; margin:0px auto; width:960px; height:110px; overflow:hidden;}
-#menu-wrap ul#menu{position:absolute; left: 52px; background: transparent url(img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:33px 0px 0px 0px; text-align:center;}
+#menu-wrap ul#menu{position:absolute; left: 52px; background: transparent url(../img/nav-bg.png) top left repeat-x; display:block;margin:0px auto; list-style:none; width:864px; height:77px; padding:33px 0px 0px 0px; text-align:center;}
 #menu-wrap ul#menu li{display:inline; text-align:center; margin:50px 10px 0px 10px;}
 #menu-wrap ul#menu li a{color:#d99400; font:normal 15px Helvetica; line-height:60px; text-transform:uppercase;}
 #menu-wrap ul#menu li a:hover{color:#ffae00;}
 /* logo and logo container */
-#urbandev-logo{background: transparent url(img/header-logo.png) 380px 35px no-repeat;width:960px; height:318px; position:absolute; left:0px; top:95px; text-align:center; overflow:hidden; z-index:5;}
-#urbandev-logo-glow{background: transparent url(img/header-logo-glow.png) center 0px no-repeat;width:960px; height:305px; position:absolute; left:0px; top:0px;}  
+#urbandev-logo{background: transparent url(../img/header-logo.png) 380px 35px no-repeat;width:960px; height:318px; position:absolute; left:0px; top:95px; text-align:center; overflow:hidden; z-index:5;}
+#urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center 0px no-repeat;width:960px; height:305px; position:absolute; left:0px; top:0px;}  
 #urbandev-logo h2{width:960px; position:absolute; left:0px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center;}
-#urbandev-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(img/slogan.png) center center no-repeat; top:350px;}
+#urbandev-logo .slogan{text-indent:-9999px; overflow:hidden; background: transparent url(../img/slogan.png) center center no-repeat; top:350px;}
 /* footer and footer menu bar */
-#bottom-pane{background: transparent url(img/orange-glow.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:230px; padding:30px 0px 0px 0px; z-index:30; top:-32px;}
-#bottom-pane #footer-menu{background: transparent url(img/footer.png) repeat-x; margin:0px; display:block; position:relative; width:864px; height:225px; margin:0px auto;padding:20px 0px 0px 0px;}
+#bottom-pane{background: transparent url(../img/orange-glow.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:230px; padding:30px 0px 0px 0px; z-index:30; top:-32px;}
+#bottom-pane #footer-menu{background: transparent url(../img/footer.png) repeat-x; margin:0px; display:block; position:relative; width:864px; height:225px; margin:0px auto;padding:20px 0px 0px 0px;}
 #bottom-pane #footer-menu .menu{border-right:#3c2d0b;float:left; width:150px;}
-#bottom-pane #footer-menu .our-story{background: transparent url(img/our-story-bg.png) repeat-x; width:308px; height:200px; list-style:none; padding: 10px 20px 0px 20px; margin:5px 13px 0px 10px; border-right:#3c2d0b;float:left;}
+#bottom-pane #footer-menu .our-story{background: transparent url(../img/our-story-bg.png) repeat-x; width:308px; height:200px; list-style:none; padding: 10px 20px 0px 20px; margin:5px 13px 0px 10px; border-right:#3c2d0b;float:left;}
 #bottom-pane #footer-menu h4.footer-label{font:bold 13px helvetica;color:#805700;margin:10px 0px 0px 0px; text-transform:uppercase;}
 #bottom-pane #footer-menu .our-story h2.footer-label{font:bold 13px helvetica;color:#b3b3b3;margin:0px 0px 0px 0px; text-transform:uppercase;}
 #bottom-pane #footer-menu .our-story p{font:normal 12px helvetica; line-height:20px; color:#999999;margin:0px;}
@@ -36,9 +36,9 @@ body a img{border:none;}
 #bottom-pane #footer-menu .menu.bottom-left ul li, #bottom-pane #footer-menu .menu.bottom-right ul li {display:inline;height:20px;float:left;}
 #bottom-pane #footer-menu .menu.bottom-left ul li a, #bottom-pane #footer-menu .menu.bottom-right ul li a{display:block; width:150px;height:50px; white-space:nowrap;text-indent:-999px;}
 #bottom-pane #footer-menu .menu ul li a:hover{color:#996900;}
-#bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link{background: transparent url(img/twitter.png) no-repeat;background-position:top left;}
+#bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link{background: transparent url(../img/twitter.png) no-repeat;background-position:top left;}
 #bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link:hover{background-position:bottom left;}
-#bottom-pane #footer-menu .menu.bottom-left ul li a.github-link{background: transparent url(img/github.png) no-repeat;background-position:top left;}
+#bottom-pane #footer-menu .menu.bottom-left ul li a.github-link{background: transparent url(../img/github.png) no-repeat;background-position:top left;}
 #bottom-pane #footer-menu .menu.bottom-left ul li a.github-link:hover{background-position:bottom left;}
-#bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link{background: transparent url(img/just199.png) no-repeat;background-position:top left;}
+#bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link{background: transparent url(../img/just199.png) no-repeat;background-position:top left;}
 #bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link:hover{background-position:bottom left;}

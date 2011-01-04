@@ -25,7 +25,7 @@ body a img{border:none;}
 #home-featured .featured-text h4.featured-name{font:normal 12px Helvetica;margin-bottom:10px;}
 #home-featured .featured-text .featured-url {color:#ccc; font:normal 11px Helvetica;}
 #home-featured .featured-text ul.featured-services {list-style:none;margin-bottom:10px;}
-#home-featured .featured-text ul.featured-services li {color:#ccc; font:normal 11px Helvetica;}
+#home-featured .featured-text ul.featured-services li {color:#ccc; font:normal 11px Helvetica;line-height:11px;}
 #home-featured .featured-text .powered-by-wordpress {display:block;height:30px;width:125px;margin-top:5px;background: transparent url(../img/powered-by-wordpress-125x30.png) no-repeat;background-position:top left; text-indent:-9999px;overflow:hidden;}
 #home-logo-container{display:block; position:relative; width:265px; float:right;}
 #home-urbandev-logo{background: transparent url(../img/header-logo.png) center center no-repeat; position:relative; margin:0px auto; width:265px; height:294px; top:95px; text-align:center; overflow:hidden; z-index:5;}

@@ -16,9 +16,17 @@ body a img{border:none;}
 #menu-wrap ul#menu li a{color:#d99400; font:normal 15px Helvetica; line-height:60px; text-transform:uppercase;}
 #menu-wrap ul#menu li a:hover{color:#ffae00;}
 /* home page content */
-#home-promo{margin-right:45px;}
-#home-promo{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;}
-#home-promo h3.promo-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:32px; padding:0px 15px;}
+#home-featured{margin-right:45px;}
+#home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;}
+#home-featured h3.featured-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:32px; padding:0px 15px;}
+#home-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
+#home-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}
+#home-featured .featured-text .featured-label{display:block;font:bold 10px Helvetica;text-transform:uppercase;}
+#home-featured .featured-text h4.featured-header{font:normal 12px Helvetica;text-transform:uppercase;margin-bottom:10px;}
+#home-featured .featured-text .featured-url {color:#ccc; font:normal 11px Helvetica;}
+#home-featured .featured-text ul.featured-services {list-style:none;margin-bottom:10px;}
+#home-featured .featured-text ul.featured-services li {color:#ccc; font:normal 11px Helvetica;}
+#home-featured .featured-text .powered-by-wordpress {display:block;height:30px;width:125px;margin-top:5px;background: transparent url(../img/powered-by-wordpress-125x30.png) no-repeat;background-position:top left; text-indent:-9999px;overflow:hidden;}
 #home-logo-container{display:block; position:relative; width:265px; float:right;}
 #home-urbandev-logo{background: transparent url(../img/header-logo.png) center center no-repeat; position:relative; margin:0px auto; width:265px; height:294px; top:95px; text-align:center; overflow:hidden; z-index:5;}
 #home-urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center center no-repeat;width:265px; height:294px; margin:0px auto;}  

@@ -2,10 +2,10 @@
 
 var currentPage = '';
 
-$('a.inline-content').click(function (e) {
+$('a.inline-content').live('click', function(event){
 	var requestedURI = $(this).attr('href');
 	loadContent(requestedURI)
-	e.preventDefault();
+  event.preventDefault();
 });
 
 function loadContent(URL){
@@ -54,3 +54,10 @@ function logoPulse()
 	$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000);
 }
 // End animation functions
+
+// Handle external links (Open in new window/tab)
+$('a.external-link').live('click', function(event){
+	var requestedLink = $(this).attr('href');
+	window.open(requestedLink,'_blank');
+  event.preventDefault();
+});

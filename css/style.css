@@ -21,7 +21,7 @@ body a img{border:none;}
 #home-featured h3.featured-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:32px; padding:0px 15px;}
 #home-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
 #home-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}
-#home-featured .featured-text .featured-label{display:block;font:bold 10px Helvetica;text-transform:uppercase;}
+#home-featured .featured-text .featured-label{display:block;font:bold 10px Helvetica;text-transform:uppercase;line-height:10px;}
 #home-featured .featured-text h4.featured-name{font:normal 12px Helvetica;margin-bottom:9px;}
 #home-featured .featured-text .featured-url {color:#ccc; font:normal 11px Helvetica;}
 #home-featured .featured-text ul.featured-services {list-style:none;margin-bottom:9px;}

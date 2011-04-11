@@ -3,7 +3,7 @@ var urbanDev = {};
 var loadContent = function(URL){
 	var reqPage = parseUri(URL).file;
 	var height = parseUri(URL).queryKey.height;
-	if(parseUri(URL).file!=urbanDev.page){
+	if(reqPage !== urbanDev.page){
 		$('#page-container').stop(true,true);
 		$('#page-content').fadeOut('fast', function(){
 			$('#page-container').animate({height: height}, 500,

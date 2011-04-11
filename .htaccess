@@ -1,4 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-rewritecond %{http_host} ^urbandev.net [nc]
-rewriterule ^(.*)$ http://www.urbandev.net/$1 [r=301,nc]

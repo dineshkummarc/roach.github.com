@@ -10,7 +10,8 @@ var loadContent = function(URL){
 				function(){
 				$('#page-content').load(reqPage, function() {
 					urbanDev.page = reqPage;
-				}).fadeIn('fast');
+				});
+				$('#page-content').fadeIn('fast');
 			})
 		})
 	}

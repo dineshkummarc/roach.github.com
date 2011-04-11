@@ -6,6 +6,8 @@ var loadContent = function(URL){
 	if(reqPage !== urbanDev.page){
 		$('#page-container').stop(true,true);
 		$('#page-content').fadeOut('fast', function(){
+			$(this).html('');
+			console.log($(this).html())
 			$('#page-container').animate({height: height}, 500,
 				function(){
 				$('#page-content').load(reqPage, function() {

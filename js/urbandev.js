@@ -13,7 +13,7 @@ var loadContent = function(URL){
 				success: function(result) {
 					$('#page-content').html(result);
 					urbanDev.page = contentRequest.page;
-					$('#page-container').animate({height: contentRequest.height},500,
+					$('#page-container, #content-wrap').animate({height: contentRequest.height},500,
 						function(){$('#page-content').fadeIn('fast')}
 					)
 				}

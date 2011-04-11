@@ -31,6 +31,18 @@ body a img{border:none;}
 #home-urbandev-logo{background: transparent url(../img/header-logo.png) center center no-repeat; position:relative; margin:0px auto; width:265px; height:294px; top:95px; text-align:center; overflow:hidden; z-index:5;}
 #home-urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center center no-repeat;width:265px; height:294px; margin:0px auto;}  
 h2#home-slogan{width:600px; height:27px; position:absolute; left:180px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center; overflow:hidden; top:450px;}
+/* portfolio content */
+#portfolio-featured{margin:0px 5px 5px 0px;}
+#portfolio-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;}
+#portfolio-featured h3.featured-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:32px; padding:0px 15px;}
+#portfolio-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
+#portfolio-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}
+#portfolio-featured .featured-text .featured-label{display:block;font:bold 10px Helvetica;text-transform:uppercase;line-height:12px;}
+#portfolio-featured .featured-text h4.featured-name{font:normal 10px Helvetica;margin-bottom:9px;}
+#portfolio-featured .featured-text .featured-url {color:#ccc; font:normal 10px Helvetica;}
+#portfolio-featured .featured-text ul.featured-services {list-style:none;margin-bottom:9px;}
+#portfolio-featured .featured-text ul.featured-services li {color:#ccc; font:normal 10px Helvetica;line-height:11px;}
+#portfolio-featured .featured-text .powered-by-wordpress {display:block;height:30px;width:125px;margin-top:4px;background: transparent url(../img/powered-by-wordpress-125x30.png) no-repeat;background-position:top left; text-indent:-9999px;overflow:hidden;}
 /* footer and footer menu bar */
 #bottom-pane{background: transparent url(../img/orange-glow.png) repeat-x; margin:0px; display:block; position:relative; width:100%; height:230px; padding:30px 0px 0px 0px; z-index:30; top:-32px;}
 #bottom-pane #footer-menu{background: transparent url(../img/footer.png) repeat-x; margin:0px; display:block; position:relative; width:864px; height:225px; margin:0px auto;padding:20px 0px 0px 0px;}

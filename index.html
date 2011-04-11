@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="js/parseuri.js"></script>
     <script type="text/javascript" src="js/ga.js"></script>
     <!--[if IE]>
       <style type="text/css">
@@ -19,18 +18,18 @@
   <body>
     <div id="top-pane">
       <div id="top-banner">
-        <a href="/home.html?height=420" id="top-logo" class="inline-content"><img src="img/toplogo.png" alt="Urban Development - Website design and development services"/></a>
+        <a href="/home.html?height=420" id="top-logo" class="local-content"><img src="img/toplogo.png" alt="Urban Development - Website design and development services"/></a>
       </div>
     </div>
     <div id="page-container">
       <div id="menu-wrap">
         <ul id="menu">
-          <li><a href="/home.html?height=420" class="inline-content home-link">Home</a></li>
-          <li><a href="/our-services.html?height=500" class="inline-content">Services</a></li>
-          <li><a href="/our-portfolio.html?height=500" class="inline-content">Portfolio</a></li>
-          <li><a href="/current-projects.html?height=500" class="inline-content">Current Projects</a></li>
-          <li><a href="/contact-us.html?height=500" class="inline-content">Contact Information</a></li>
-          <li><a href="/blog.html?height=500" class="inline-content">Blog</a></li>          
+          <li><a href="/home.html?height=420" class="local-content home-link">Home</a></li>
+          <li><a href="/our-services.html?height=500" class="local-content">Services</a></li>
+          <li><a href="/our-portfolio.html?height=500" class="local-content">Portfolio</a></li>
+          <li><a href="/current-projects.html?height=500" class="local-content">Current Projects</a></li>
+          <li><a href="/contact-us.html?height=500" class="local-content">Contact Information</a></li>
+          <li><a href="/blog.html?height=500" class="local-content">Blog</a></li>          
         </ul>
       </div>
       <div id="content-wrap">
@@ -87,13 +86,9 @@
       </div>
     </div>
     <script type="text/javascript">
-    $.getScript('js/urbandev.js', function() {
-      var homePage = "home.html";
-      $('#page-content').css('display', 'block');
-      $('#page-content').load(homePage, function() {
-      	currentPage = homePage;
+      $.getScript('js/urbandev.js', function() {
+        loadContent("http://roach.github.com/home.html");
       })
-    })
     </script>
   </body>
 </html>

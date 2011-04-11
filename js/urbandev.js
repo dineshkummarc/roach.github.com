@@ -20,14 +20,12 @@ var loadContent = function(URL){
 }
 
 $('a.local-content').live('click', function(event){
-	var requestedURI = this.href;
-	loadContent(requestedURI)
+	loadContent(this.href);
   event.preventDefault();
 });
 
 $('a.external-link').live('click', function(event){
-	var requestedLink = this.href;
-	window.open(requestedLink,'_blank');
+	window.open(this.href,'_blank');
   event.preventDefault();
 });
 

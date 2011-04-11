@@ -24,23 +24,26 @@
 </div>
 <h2 id="home-slogan">Website design and development solutions.</h2>
 <script>
-  var logoInit = function(){
-  	$('#home-urbandev-logo, #home-urbandev-logo-glow, #home-urbandev-logo .slogan').css('opacity', 0);
-  	$('#home-urbandev-logo').animate(
-  		{ opacity: 0.6 },
-  		500,
-  		function(){
-  			var logoTimer;
-  			var logoPulse = function(){$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000)}
-  			$('h2#home-slogan').stop(true,false);
-  			$('h2#home-slogan').animate({top: [375, 'swing'], opacity: 0.6}, 500, function(){
-  				$('#home-urbandev-logo-glow').animate({opacity: 0.2},150, function(){
-  					$(this).animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
-  						logoTimer = setInterval(logoPulse, 6000);
-  					})
-  				})
-  			})
-  		})
+  urbanDev.logo = {
+    init: function(){
+      var udlogo = this;
+      if(logoTimer == undefined){var logoTimer;}else{logoTimer = clearInterval()}
+    	$('#home-urbandev-logo, #home-urbandev-logo-glow, #home-urbandev-logo .slogan').css('opacity', 0);
+    	$('#home-urbandev-logo').animate(
+    		{ opacity: 0.6 },
+    		500,
+    		function(){
+    			$('h2#home-slogan').stop(true,false);
+    			$('h2#home-slogan').animate({top: [375, 'swing'], opacity: 0.6}, 500, function(){
+    				$('#home-urbandev-logo-glow').animate({opacity: 0.2},150, function(){
+    					$(this).animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
+               logoTimer = setInterval(udlogo.pulse, 6000);
+    					})
+    				})
+    			})
+    		})
+    },
+    pulse: function(){$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000)}
   }
-  logoInit();
+  urbanDev.logo.init();
 </script>

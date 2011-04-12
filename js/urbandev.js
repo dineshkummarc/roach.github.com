@@ -3,22 +3,20 @@ var urbanDev = {
 		var contentRequest = {}
 		contentRequest.page = parseUri(URL).file;
 		contentRequest.height = parseUri(URL).queryKey.height;
-		if(contentRequest.page !== urbanDev.page){
-			$('#page-container').stop(true,true);
-			$('#page-content').fadeOut('fast', function(){
-				this.innerHtml = '';
-				$.ajax({
-					url: contentRequest.page,
-					success: function(result) {
-						$('#page-content').html(result);
-						urbanDev.page = contentRequest.page;
-						$('#page-container, #content-wrap').animate({height: contentRequest.height},500,
-							function(){$('#page-content').fadeIn('fast')}
-						)
-					}
-				})
+		$('#page-container').stop(true,true);
+		$('#page-content').fadeOut('fast', function(){
+			this.innerHtml = '';
+			$.ajax({
+				url: contentRequest.page,
+				success: function(result) {
+					$('#page-content').html(result);
+					urbanDev.page = contentRequest.page;
+					$('#page-container, #content-wrap').animate({height: contentRequest.height},500,
+						function(){$('#page-content').fadeIn('fast')}
+					)
+				}
 			})
-		}
+		})
 	}
 };
 $(document).ajaxStart(function(){

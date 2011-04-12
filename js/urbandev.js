@@ -1,6 +1,6 @@
 var urbanDev = {
 	loadContent: function(URL){
-		var contentRequest = {}
+		var contentRequest = {};
 		contentRequest.page = parseUri(URL).file;
 		contentRequest.height = parseUri(URL).queryKey.height;
 		$('#page-container').stop(true,true);

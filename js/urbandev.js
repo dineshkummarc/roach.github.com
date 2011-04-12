@@ -29,10 +29,10 @@ $(document).ajaxStart(function(){
 
 $('a.local-content').live('click', function(event){
 	urbanDev.loadContent(this.href);
-  event.preventDefault();
+	event.preventDefault();
 });
 
 $('a.external-link').live('click', function(event){
 	window.open(this.href,'_blank');
-  event.preventDefault();
+	event.preventDefault();
 });

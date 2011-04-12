@@ -1,140 +1,140 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
-  <head>
-    <title>Nissan LEAF form demo - Urban Development</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="Description" content="Nissan of Bakersfield is a new and used car dealer providing Nissan cars to Bakersfield, Lamont, Shafter, Wasco and San Fernando Valley. New and Used cars, trucks and SUV's at Nissan of Bakersfield in Bakersfield CA. "/>
-    <meta name="Keywords" content="Nissan, Audi,BMW,Chevrolet,Chrysler,Dodge,Ford,GMC,Honda,Hyundai,Infiniti,Jeep,Kia,Mazda,Mercury,MINI,Nissan,Oldsmobile,Pontiac,Toyota,Bakersfield, Lamont, Shafter, Wasco and San Fernando Valley"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="Copyright" content="Copyright (c) 2011 DealerTrend, Inc.,  All Rights Reserved."/>
-    <link rel='stylesheet' href='reset.css' type='text/css' media='screen' charset='utf-8'/>
-    <link rel='stylesheet' href='screen.css' type='text/css' media='screen' charset='utf-8'/>
-    <link rel='stylesheet' href='scrollable.css' type='text/css' media='screen' charset='utf-8'/>
-    <!--[if IE]><link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen" charset="utf-8"><![endif]-->
-    <script src='js/jquery.all.js' type='text/javascript' charset='utf-8'></script>
-  </head>
-  <body>
-  <div class="site-wrapper">
-    <div class="menu">
-      <div class="menubar">
-        <ul>
-          <li><a href="#" class="selected" ><span class='text'>Home</span></a></li>
-          <li><a href="#" ><span class='text'>New Vehicles</span></a></li>
-          <li><a href="#" ><span class='text'>Pre-Owned Vehicles</span></a></li>
-        </ul>
-      </div>
-      <div class="submenu-left" style="float:left;width:660px;">
-        <ul>
-          <li><a href="#"><span class='text'>Get Approved Now</span></a></li>
-          <li><a href="#"><span class='text'>Testimonials</span></a></li>
-          <li><a href="#"><span class='text'>About Us</span></a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="content-home">  
-    	<script type="text/javascript">
-    		$(function() {
-    			$('#slides').cycle({
-    				fx:     'fade',
-    				speed:   300,
-    				timeout: 5000,
-    				pause:   1,
-            slideExpr: 'img'
-    			});
-    		});
-    	</script>
-    	<div id="slideshow">
-        <div class="home-contact-form">
-          <a href="#SHOW" class="hideshow leaf-open" style="display:block;">Reserve your Nissan LEAF</a>
-          <a href="#HIDE" class="hideshow leaf-close" style="display:none;">Reserve your Nissan LEAF</a>
-          <form action="http://api.dealertrend.com/331/forms/create/contact_us" enctype="multipart/form-data" method="post" name="formcontact_us" id="formcontact_ushome">
-            <input id="return_url" name="return_url" type="hidden" value="/" />
-            <input id="required_fields" name="required_fields" type="hidden" value="name,email,privacy" />
-            <input id="subject" name="subject" type="hidden" value="Nissanofbakersfield.com LEAF Reservation Request" />
-            <input type="hidden" name="adsource" value=""/>
-            <div class="homelabel">Name (First &amp; Last)</div>
-            <input class="name homeinput" maxlength="70" name="name" type="text"/>
-            <div class="homelabel">E-mail</div>
-            <input class="email homeinput" maxlength="255" name="email" type="text"/>
-            <div class="homelabel">Phone Number</div>
-            <input class="phone homeinput" maxlength="15" name="phone" type="text"/>
-            <div style="width:210px;text-align:left;font-size:10px; margin: 0px auto;height: 25px; line-height: 23px;"><input id="privacy" name="privacy" type="checkbox" value="yes" /> I have read the <a href="/privacy" target="_blank">privacy policy</a>.</div>
-            <div style="display: none;" id="form_info">
-            <input id="agree_sb" name="agree_sb" type="checkbox" value="Yes"/>
-            <input type="hidden" id="comments" name="comments" value="Please contact me regarding Nissan LEAF reservations."/>
-            </div>
-            <a href="#" class="leaf-submit">Sign up now</a>
-          </form>
-          <script type='text/javascript'>
-            //<![CDATA[
-        		$('.leaf-open').click(function(e) {
-              $('.home-contact-form').animate({
-                top: '10px'
-              }, 800, function() { $('.home-contact-form .hideshow').toggle() });
-              e.preventDefault(); 
-            });
-            $('.leaf-close').click(function(e) {
-              $('.home-contact-form').animate({
-                top: '245px'
-              }, 800, function() { $('.home-contact-form .hideshow').toggle() });
-              e.preventDefault();
-            });
-            //]]>
-          </script>
-        </div> 
-      	<div id="slides">
-          <img src="img/slides/1.jpg" alt="" width="420" height="300" />
-          <img src="img/slides/2.jpg" alt="" width="420" height="300" />
-          <img src="img/slides/3.jpg" alt="" width="420" height="300" />
-          <img src="img/slides/4.jpg" alt="" width="420" height="300" />
-      	</div>
-    	</div>
-    	<div id="models">
-        <ul>
-          <li><a href="#">370Z</a></li>
-          <li><a href="#">Altima</a></li>
-          <li><a href="#">Armada</a></li>
-          <li><a href="#">Cube</a></li>
-          <li><a href="#">Frontier</a></li>
-          <li><a href="#">GT-R</a></li>
-          <li><a href="#">Juke</a></li>
-          <li><a href="#">Leaf</a></li>
-          <li><a href="#">Maxima</a></li>
-        </ul>
-    	</div>
-      <div id="scrollmenu">
-        <a class="prev"></a>
-        <div class="scrollable" style="width: 958px;">
-          <div class="items">
-            <div><a href="#"><img src="img/models/370Z_btn.jpg" alt="370Z"/></a></div>
-            <div><a href="#"><img src="img/models/altima_btn.jpg" alt="Altima"/></a></div>
-            <div><a href="#"><img src="img/models/armada_btn.jpg" alt="Armada"/></a></div>
-            <div><a href="#"><img src="img/models/cube_btn.jpg" alt="Cube"/></a></div>
-            <div><a href="#"><img src="img/models/Frontier_btn.jpg" alt="Frontier"/></a></div>
-            <div><a href="#"><img src="img/models/GTR_btn.jpg" alt="GT-R"/></a></div>
-          </div>
-        </div>
-        <a class="next"></a>
-      </div>
-      <script type="text/javascript">
-          // custom easing called "custom" 
-          /* <![CDATA[ */
-          $.easing.custom = function(x, t, b, c, d){
-              var s = 1.5;
-              if ((t /= d / 2) < 1) 
-                  return c / 2 * (t * t * (((s *= (1)) + 1) * t - s)) + b;
-              return c / 2 * ((t -= 2) * t * (((s *= (1)) + 1) * t + s) + 2) + b;
-          }
-          $("div.scrollable").scrollable({
-              size: 6,
-              interval: 8000,
-              loop: true,
-              speed: 600,
-              easing: 'custom'
-          }).circular().autoscroll();
-          /* ]]> */
-      </script>
-    </div>
-  </div>
-  </body>
+	<head>
+		<title>Nissan LEAF form demo - Urban Development</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<meta name="Description" content="Nissan of Bakersfield is a new and used car dealer providing Nissan cars to Bakersfield, Lamont, Shafter, Wasco and San Fernando Valley. New and Used cars, trucks and SUV's at Nissan of Bakersfield in Bakersfield CA. "/>
+		<meta name="Keywords" content="Nissan, Audi,BMW,Chevrolet,Chrysler,Dodge,Ford,GMC,Honda,Hyundai,Infiniti,Jeep,Kia,Mazda,Mercury,MINI,Nissan,Oldsmobile,Pontiac,Toyota,Bakersfield, Lamont, Shafter, Wasco and San Fernando Valley"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="Copyright" content="Copyright (c) 2011 DealerTrend, Inc.,	All Rights Reserved."/>
+		<link rel='stylesheet' href='reset.css' type='text/css' media='screen' charset='utf-8'/>
+		<link rel='stylesheet' href='screen.css' type='text/css' media='screen' charset='utf-8'/>
+		<link rel='stylesheet' href='scrollable.css' type='text/css' media='screen' charset='utf-8'/>
+		<!--[if IE]><link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen" charset="utf-8"><![endif]-->
+		<script src='js/jquery.all.js' type='text/javascript' charset='utf-8'></script>
+	</head>
+	<body>
+	<div class="site-wrapper">
+		<div class="menu">
+			<div class="menubar">
+				<ul>
+					<li><a href="#" class="selected" ><span class='text'>Home</span></a></li>
+					<li><a href="#" ><span class='text'>New Vehicles</span></a></li>
+					<li><a href="#" ><span class='text'>Pre-Owned Vehicles</span></a></li>
+				</ul>
+			</div>
+			<div class="submenu-left" style="float:left;width:660px;">
+				<ul>
+					<li><a href="#"><span class='text'>Get Approved Now</span></a></li>
+					<li><a href="#"><span class='text'>Testimonials</span></a></li>
+					<li><a href="#"><span class='text'>About Us</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content-home">	
+			<script type="text/javascript">
+				$(function() {
+					$('#slides').cycle({
+						fx:		 'fade',
+						speed:	 300,
+						timeout: 5000,
+						pause:	 1,
+						slideExpr: 'img'
+					});
+				});
+			</script>
+			<div id="slideshow">
+				<div class="home-contact-form">
+					<a href="#SHOW" class="hideshow leaf-open" style="display:block;">Reserve your Nissan LEAF</a>
+					<a href="#HIDE" class="hideshow leaf-close" style="display:none;">Reserve your Nissan LEAF</a>
+					<form action="http://api.dealertrend.com/331/forms/create/contact_us" enctype="multipart/form-data" method="post" name="formcontact_us" id="formcontact_ushome">
+						<input id="return_url" name="return_url" type="hidden" value="/" />
+						<input id="required_fields" name="required_fields" type="hidden" value="name,email,privacy" />
+						<input id="subject" name="subject" type="hidden" value="Nissanofbakersfield.com LEAF Reservation Request" />
+						<input type="hidden" name="adsource" value=""/>
+						<div class="homelabel">Name (First &amp; Last)</div>
+						<input class="name homeinput" maxlength="70" name="name" type="text"/>
+						<div class="homelabel">E-mail</div>
+						<input class="email homeinput" maxlength="255" name="email" type="text"/>
+						<div class="homelabel">Phone Number</div>
+						<input class="phone homeinput" maxlength="15" name="phone" type="text"/>
+						<div style="width:210px;text-align:left;font-size:10px; margin: 0px auto;height: 25px; line-height: 23px;"><input id="privacy" name="privacy" type="checkbox" value="yes" /> I have read the <a href="/privacy" target="_blank">privacy policy</a>.</div>
+						<div style="display: none;" id="form_info">
+						<input id="agree_sb" name="agree_sb" type="checkbox" value="Yes"/>
+						<input type="hidden" id="comments" name="comments" value="Please contact me regarding Nissan LEAF reservations."/>
+						</div>
+						<a href="#" class="leaf-submit">Sign up now</a>
+					</form>
+					<script type='text/javascript'>
+						//<![CDATA[
+						$('.leaf-open').click(function(e) {
+							$('.home-contact-form').animate({
+								top: '10px'
+							}, 800, function() { $('.home-contact-form .hideshow').toggle() });
+							e.preventDefault(); 
+						});
+						$('.leaf-close').click(function(e) {
+							$('.home-contact-form').animate({
+								top: '245px'
+							}, 800, function() { $('.home-contact-form .hideshow').toggle() });
+							e.preventDefault();
+						});
+						//]]>
+					</script>
+				</div> 
+				<div id="slides">
+					<img src="img/slides/1.jpg" alt="" width="420" height="300" />
+					<img src="img/slides/2.jpg" alt="" width="420" height="300" />
+					<img src="img/slides/3.jpg" alt="" width="420" height="300" />
+					<img src="img/slides/4.jpg" alt="" width="420" height="300" />
+				</div>
+			</div>
+			<div id="models">
+				<ul>
+					<li><a href="#">370Z</a></li>
+					<li><a href="#">Altima</a></li>
+					<li><a href="#">Armada</a></li>
+					<li><a href="#">Cube</a></li>
+					<li><a href="#">Frontier</a></li>
+					<li><a href="#">GT-R</a></li>
+					<li><a href="#">Juke</a></li>
+					<li><a href="#">Leaf</a></li>
+					<li><a href="#">Maxima</a></li>
+				</ul>
+			</div>
+			<div id="scrollmenu">
+				<a class="prev"></a>
+				<div class="scrollable" style="width: 958px;">
+					<div class="items">
+						<div><a href="#"><img src="img/models/370Z_btn.jpg" alt="370Z"/></a></div>
+						<div><a href="#"><img src="img/models/altima_btn.jpg" alt="Altima"/></a></div>
+						<div><a href="#"><img src="img/models/armada_btn.jpg" alt="Armada"/></a></div>
+						<div><a href="#"><img src="img/models/cube_btn.jpg" alt="Cube"/></a></div>
+						<div><a href="#"><img src="img/models/Frontier_btn.jpg" alt="Frontier"/></a></div>
+						<div><a href="#"><img src="img/models/GTR_btn.jpg" alt="GT-R"/></a></div>
+					</div>
+				</div>
+				<a class="next"></a>
+			</div>
+			<script type="text/javascript">
+					// custom easing called "custom" 
+					/* <![CDATA[ */
+					$.easing.custom = function(x, t, b, c, d){
+							var s = 1.5;
+							if ((t /= d / 2) < 1) 
+									return c / 2 * (t * t * (((s *= (1)) + 1) * t - s)) + b;
+							return c / 2 * ((t -= 2) * t * (((s *= (1)) + 1) * t + s) + 2) + b;
+					}
+					$("div.scrollable").scrollable({
+							size: 6,
+							interval: 8000,
+							loop: true,
+							speed: 600,
+							easing: 'custom'
+					}).circular().autoscroll();
+					/* ]]> */
+			</script>
+		</div>
+	</div>
+	</body>
 </html>

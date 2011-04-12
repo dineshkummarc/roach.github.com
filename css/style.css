@@ -59,9 +59,9 @@ h2#home-slogan{width:600px; height:27px; position:absolute; left:180px; margin:0
 #bottom-pane #footer-menu .menu.bottom-left ul li, #bottom-pane #footer-menu .menu.bottom-right ul li {display:inline;height:20px;float:left;}
 #bottom-pane #footer-menu .menu.bottom-left ul li a, #bottom-pane #footer-menu .menu.bottom-right ul li a{display:block; width:150px;height:50px; white-space:nowrap;text-indent:-9999px; overflow:hidden;}
 #bottom-pane #footer-menu .menu ul li a:hover{color:#996900;}
-#bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link{background: transparent url(../img/twitter.png) no-repeat;background-position:top left;}
-#bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link:hover{background-position:bottom left;}
-#bottom-pane #footer-menu .menu.bottom-left ul li a.github-link{background: transparent url(../img/github.png) no-repeat;background-position:top left;}
-#bottom-pane #footer-menu .menu.bottom-left ul li a.github-link:hover{background-position:bottom left;}
-#bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link{background: transparent url(../img/just199.png) no-repeat;background-position:top left;}
-#bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link:hover{background-position:bottom left;}
+#bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link{background: transparent url(../img/twitter-github-just199.png) no-repeat;background-position:0px 0px;}
+#bottom-pane #footer-menu .menu.bottom-left ul li a.twitter-link:hover{background-position:0px -50px;}
+#bottom-pane #footer-menu .menu.bottom-left ul li a.github-link{background: transparent url(../img/twitter-github-just199.png) no-repeat;background-position:0px -100px;}
+#bottom-pane #footer-menu .menu.bottom-left ul li a.github-link:hover{background-position:0px -150px;}
+#bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link{background: transparent url(../img/twitter-github-just199.png) no-repeat;background-position:0px -200px;}
+#bottom-pane #footer-menu .menu.bottom-right ul li a.just199-link:hover{background-position:0px -250px;}

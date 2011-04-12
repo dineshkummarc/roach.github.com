@@ -27,7 +27,7 @@
   urbanDev.logo = {
     init: function(){
       var udlogo = this;
-      if(logoTimer == undefined){var logoTimer;}else{logoTimer = clearInterval()}
+      if(logoTimer == undefined){var logoTimer;}else{logoTimer = clearInterval(logoTimer)}
     	$('#home-urbandev-logo, #home-urbandev-logo-glow, #home-urbandev-logo .slogan').css('opacity', 0);
     	$('#home-urbandev-logo').animate(
     		{ opacity: 0.6 },

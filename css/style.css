@@ -21,7 +21,7 @@ body a img{border:none;}
 #home-contact-me .medium{font-size:20px;line-height:20px;}
 #home-contact-me .small{font-size:10px;line-height:10px;}
 #home-hosted-on-github{background: transparent url(../img/hosted-on-github.png) center center no-repeat;display:block; position:relative; width:237px; height:193px; float:left; clear:left; top:125px;margin:0px 0px 0px 87px; text-indent:-9999px; overflow:hidden;}
-#home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;margin-right:50px;}
+#home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:130px;margin-right:50px;}
 #home-featured h3.featured-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:32px; padding:0px 15px;}
 #home-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
 #home-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}

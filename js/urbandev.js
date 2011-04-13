@@ -17,9 +17,9 @@ var urbanDev = {
 						function(){$('#page-content').fadeIn('fast');}
 					);
 				},
-		   error: function (request, status, error) {
-		        // TODO: Add error handling.
-		    }
+				error: function (request, status, error) {
+					// TODO: Add error handling.
+				}
 			});
 		});
 	}

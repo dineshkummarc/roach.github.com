@@ -31,7 +31,7 @@
 			if (udlogo.timer) {
 				clearInterval(udlogo.timer);
 				udlogo.timer = null;
-			};
+			}
 			$('#home-urbandev-logo, #home-urbandev-logo-glow, #home-urbandev-logo .slogan').css('opacity', 0);
 			$('#home-urbandev-logo').animate(
 				{ opacity: 0.6 },
@@ -42,12 +42,12 @@
 						$('#home-urbandev-logo-glow').animate({opacity: 0.2},150, function(){
 							$(this).animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
 								udlogo.timer = setInterval(udlogo.pulse, 6000);									
-							})
-						})
-					})
-				})
+							});
+						});
+					});
+				});
 			},
-		pulse: function(){$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000)}
-	}
+		pulse: function(){$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000);}
+	};
 	urbanDev.logo.init();
 </script>

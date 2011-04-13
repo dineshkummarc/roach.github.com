@@ -16,7 +16,10 @@ var urbanDev = {
 					$('#page-container, #content-wrap').animate({height: contentRequest.height},500,
 						function(){$('#page-content').fadeIn('fast');}
 					);
-				}
+				},
+		   error: function (request, status, error) {
+		        // TODO: Add error handling.
+		    }
 			});
 		});
 	}

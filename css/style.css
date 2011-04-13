@@ -16,8 +16,12 @@ body a img{border:none;}
 #menu-wrap ul#menu li a{color:#d99400; font:normal 15px Helvetica; line-height:60px; text-transform:uppercase;}
 #menu-wrap ul#menu li a:hover{color:#ffae00;}
 /* home page content */
-#home-featured{margin-right:45px;}
-#home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;}
+#home-contact-me{background: transparent url(../img/contact-me.png) center center no-repeat;display:block; position:relative; width:204px; height:49px; float:left; top:120px;margin:0px 0px 0px 85px;padding:15px 5px 5px 5px;}
+#home-contact-me .medium, #home-contact-me .small{display:block;color:white;opacity:0.8;text-align:center;}
+#home-contact-me .medium{font-size:20px;line-height:20px;}
+#home-contact-me .small{font-size:10px;line-height:10px;}
+#home-hosted-on-github{background: transparent url(../img/hosted-on-github.png) center center no-repeat;display:block; position:relative; width:237px; height:193px; float:left; clear:left; top:125px;margin:0px 0px 0px 87px; text-indent:-9999px; overflow:hidden;}
+#home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;margin-right:50px;}
 #home-featured h3.featured-header{display:block; font:bold 13px helvetica; text-transform:uppercase; height:27px; line-height:32px; padding:0px 15px;}
 #home-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
 #home-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}

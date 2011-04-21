@@ -66,7 +66,7 @@ urbanDev.logo = {
 	pulse: function () {$('.home-urbandev-logo-glow').animate({opacity: 0.2}, 500).animate({opacity: 0.4}, 1000); }
 };
 
-$(window).bind('hashchange', function (event) {
+$(window).bind('hashchange', function () {
 	urbanDev.loadContent(window.location.href);
 });
 

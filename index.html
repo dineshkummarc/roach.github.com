@@ -28,18 +28,18 @@
 	<body>
 		<div id="top-pane">
 			<div id="top-banner">
-				<a href="/home.html?height=420" id="top-logo" class="local-content"><img src="img/toplogo.png" alt="Urban Development - Website design and development services"/></a>
+				<a href="#home" id="top-logo" class="local-content"><img src="img/toplogo.png" alt="Urban Development - Website design and development services"/></a>
 			</div>
 		</div>
 		<div id="page-container">
 			<div id="menu-wrap">
 				<ul id="menu">
-					<li><a href="/home.html?height=420" class="local-content home-link">Home</a></li>
-					<li><a href="/services.html?height=700" class="local-content">Services</a></li>
-					<li><a href="/current-projects.html?height=500" class="local-content">Current Projects</a></li>
-					<li><a href="/portfolio.html?height=600" class="local-content">Portfolio</a></li>
-					<li><a href="/blog.html?height=500" class="local-content">Résumé</a></li>
-					<li><a href="/contact-info.html?height=500" class="local-content">Contact Information</a></li>
+					<li><a href="#home" class="local-content home-link">Home</a></li>
+					<li><a href="#services" class="local-content">Services</a></li>
+					<li><a href="#projects" class="local-content">Current Projects</a></li>
+					<li><a href="#portfolio" class="local-content">Portfolio</a></li>
+					<li><a href="#blog" class="local-content">Résumé</a></li>
+					<li><a href="#contact" class="local-content">Contact Information</a></li>
 				</ul>
 			</div>
 			<div id="content-wrap">
@@ -99,7 +99,7 @@
 		</div>
 		<script type="text/javascript">
 			$.getScript('js/urbandev.js', function() {
-				urbanDev.loadContent($('#menu-wrap #menu .home-link').attr('href'));
+				urbanDev.initialize();
 			});
 		</script>
 	</body>

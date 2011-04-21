@@ -16,25 +16,25 @@ body a img{border:none;}
 #menu-wrap ul#menu li a{color:#d99400; font:normal 15px Helvetica; line-height:60px; text-transform:uppercase;}
 #menu-wrap ul#menu li a:hover{color:#ffae00;}
 /* home page content */
-#home-contact-me{background: transparent url(../img/contact-me.png) center center no-repeat;display:block; position:relative; width:204px; height:49px; float:left; top:120px;margin:0px 0px 0px 85px;padding:15px 5px 5px 5px;}
-#home-contact-me .medium, #home-contact-me .small{display:block;color:white;opacity:0.8;text-align:center;}
-#home-contact-me .medium{font-size:20px;line-height:20px;}
-#home-contact-me .small{font-size:10px;line-height:10px;}
-#home-hosted-on-github{background: transparent url(../img/hosted-on-github.png) center center no-repeat;display:block; position:relative; width:237px; height:193px; float:left; clear:left; top:125px;margin:0px 0px 0px 87px; text-indent:-9999px; overflow:hidden;}
-#home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:130px;margin-right:50px;}
-#home-featured h3.featured-header{display:block; font:bold 13px helvetica; height:27px; line-height:32px; padding:0px 15px;}
-#home-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
-#home-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}
-#home-featured .featured-text .featured-label{display:block;font:bold 10px Helvetica;text-transform:uppercase;line-height:12px;}
-#home-featured .featured-text h4.featured-name{font:normal 10px Helvetica;margin-bottom:9px;}
-#home-featured .featured-text .featured-url {color:#ccc; font:normal 10px Helvetica;}
-#home-featured .featured-text ul.featured-services {list-style:none;margin-bottom:9px;}
-#home-featured .featured-text ul.featured-services li {color:#ccc; font:normal 10px Helvetica;line-height:11px;}
-#home-featured .featured-text .powered-by-wordpress {display:block;height:30px;width:125px;margin-top:4px;background: transparent url(../img/powered-by-wordpress-125x30.png) no-repeat;background-position:top left; text-indent:-9999px;overflow:hidden;}
-#home-logo-container{display:block; position:relative; width:265px; float:right;}
-#home-urbandev-logo{background: transparent url(../img/header-logo.png) center center no-repeat; position:relative; margin:0px auto; width:265px; height:294px; top:95px; text-align:center; overflow:hidden; z-index:5;}
-#home-urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center center no-repeat;width:265px; height:294px; margin:0px auto;}	
-h2#home-slogan{width:600px; height:27px; position:absolute; left:180px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center; overflow:hidden; top:450px;}
+.home-contact-me{background: transparent url(../img/contact-me.png) center center no-repeat;display:block; position:relative; width:204px; height:49px; float:left; top:120px;margin:0px 0px 0px 85px;padding:15px 5px 5px 5px;}
+.home-contact-me .medium, .home-contact-me .small{display:block;color:white;opacity:0.8;text-align:center;}
+.home-contact-me .medium{font-size:20px;line-height:20px;}
+.home-contact-me .small{font-size:10px;line-height:10px;}
+.home-hosted-on-github{background: transparent url(../img/hosted-on-github.png) center center no-repeat;display:block; position:relative; width:237px; height:193px; float:left; clear:left; top:125px;margin:0px 0px 0px 87px; text-indent:-9999px; overflow:hidden;}
+.home-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:130px;margin-right:50px;}
+.home-featured h3.featured-header{display:block; font:bold 13px helvetica; height:27px; line-height:32px; padding:0px 15px;}
+.home-featured .featured-thumbnail {background: transparent url(../img/featured-thumb-background.png) center center no-repeat;display:block; position:relative; width:120px; height:145px; float:left; margin:5px 5px 5px 17px; padding:5px;}
+.home-featured .featured-text {padding-top: 6px;color:#ccc; font:normal 14px Helvetica;}
+.home-featured .featured-text .featured-label{display:block;font:bold 10px Helvetica;text-transform:uppercase;line-height:12px;}
+.home-featured .featured-text h4.featured-name{font:normal 10px Helvetica;margin-bottom:9px;}
+.home-featured .featured-text .featured-url {color:#ccc; font:normal 10px Helvetica;}
+.home-featured .featured-text ul.featured-services {list-style:none;margin-bottom:9px;}
+.home-featured .featured-text ul.featured-services li {color:#ccc; font:normal 10px Helvetica;line-height:11px;}
+.home-featured .featured-text .powered-by-wordpress {display:block;height:30px;width:125px;margin-top:4px;background: transparent url(../img/powered-by-wordpress-125x30.png) no-repeat;background-position:top left; text-indent:-9999px;overflow:hidden;}
+.home-logo-container{display:block; position:relative; width:265px; float:right;}
+.home-urbandev-logo{background: transparent url(../img/header-logo.png) center center no-repeat; position:relative; margin:0px auto; width:265px; height:294px; top:95px; text-align:center; overflow:hidden; z-index:5;}
+.home-urbandev-logo-glow{background: transparent url(../img/header-logo-glow.png) center center no-repeat;width:265px; height:294px; margin:0px auto;}	
+.home-slogan{width:600px; height:27px; position:absolute; left:180px; margin:0px; font-weight:bold; font-size: 20px; font-family: Helvetica, sans-serif; color:#FFF; text-align:center; overflow:hidden; top:450px;}
 /* portfolio content */
 #portfolio-featured{margin:0px 5px 5px 0px;}
 #portfolio-featured{background: transparent url(../img/home-twitter-widget.png) center center no-repeat;display:block; position:relative; width:314px; height:209px; float:right; top:140px;}
@@ -54,7 +54,8 @@ h2#home-slogan{width:600px; height:27px; position:absolute; left:180px; margin:0
 #bottom-pane #footer-menu .our-story{background: transparent url(../img/our-story-bg.png) repeat-x; width:308px; height:200px; list-style:none; padding: 10px 20px 0px 20px; margin:5px 13px 0px 10px; border-right:#3c2d0b;float:left;}
 #bottom-pane #footer-menu h4.footer-label{font:bold 13px helvetica;color:#805700;margin:10px 0px 0px 0px;}
 #bottom-pane #footer-menu .our-story h4.footer-label{font:bold 13px helvetica;color:#b3b3b3;margin:0px 0px 0px 0px;}
-#bottom-pane #footer-menu .our-story p{font:normal 12px helvetica; line-height:20px; color:#999999;margin:0px;}
+#bottom-pane #footer-menu .our-story p,#bottom-pane #footer-menu .our-story p a{font:normal 12px helvetica; line-height:20px; color:#999999;margin:0px;}
+#bottom-pane #footer-menu .our-story p a{color:#D0CFCC;}
 #bottom-pane #footer-menu .menu ul{list-style:none; padding: 0px; margin:0px;}
 #bottom-pane #footer-menu .menu ul li {height:20px;}
 #bottom-pane #footer-menu .menu ul li, #bottom-pane #footer-menu .menu ul li a{font:normal 12px helvetica; line-height:20px; color:#734e00;white-space:nowrap;}

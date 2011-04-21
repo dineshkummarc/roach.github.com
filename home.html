@@ -1,60 +1,35 @@
-<div id="home-featured">
-	<h3 class="featured-header">Featured Project</h3>
-	<div class="featured-thumbnail">
-		<a class="external-link" href="http://www.sierra4x4trailers.com"><img src="img/sierra4x4trailers-thumb.png"/></a>
+	<div class="home-featured">
+		<h3 class="featured-header">Featured Project</h3>
+		<div class="featured-thumbnail">
+			<a class="external-link" href="http://www.sierra4x4trailers.com"><img src="img/sierra4x4trailers-thumb.png"/></a>
+		</div>
+		<div class="featured-text">
+			<span class="featured-label">Project name:</span>
+			<h4 class="featured-name">Sierra 4x4 Trailers</h4>
+			<span class="featured-label">Services provided:</span>
+			<ul class="featured-services">
+				<li>Website Design</li>
+				<li>Wordpress Installation</li>
+				<li>Wordpress Theme</li>
+			</ul>
+			<span class="featured-label">View project:</span>
+			<a class="featured-url external-link" href="http://www.sierra4x4trailers.com">sierra4x4trailers.com</a>
+			<a class="powered-by-wordpress external-link"href="http://www.wordpress.org">Powered by Wordpress</a>
+		</div>
 	</div>
-	<div class="featured-text">
-		<span class="featured-label">Project name:</span>
-		<h4 class="featured-name">Sierra 4x4 Trailers</h4>
-		<span class="featured-label">Services provided:</span>
-		<ul class="featured-services">
-			<li>Website Design</li>
-			<li>Wordpress Installation</li>
-			<li>Wordpress Theme</li>
-		</ul>
-		<span class="featured-label">View project:</span>
-		<a class="featured-url external-link" href="http://www.sierra4x4trailers.com">sierra4x4trailers.com</a>
-		<a class="powered-by-wordpress external-link"href="http://www.wordpress.org">Powered by Wordpress</a>
+	<div class="home-logo-container">
+		<div class="home-urbandev-logo">
+			<div class="home-urbandev-logo-glow"></div>
+		</div>
 	</div>
-</div>
-<div id="home-logo-container">
-	<div id="home-urbandev-logo">
-		<div id="home-urbandev-logo-glow"></div>
-	</div>
-</div>
-<h2 id="home-slogan">Website design and development solutions.</h2>
-<a id="home-contact-me" href="#contact">
-	<span class="medium">Contact me</span>
-	<span class="small">I'm awesome.</span>
-</a>
-<a id="home-hosted-on-github" class="external-link" href="https://github.com/Roach/roach.github.com">
-	Hosted on GitHub
-</a>
-<script>
-	urbanDev.logo = {
-		timer: null,
-		init: function(){
-			var udlogo = this;
-			if (udlogo.timer) {
-				clearInterval(udlogo.timer);
-				udlogo.timer = null;
-			}
-			$('#home-urbandev-logo, #home-urbandev-logo-glow, #home-urbandev-logo .slogan').css('opacity', 0);
-			$('#home-urbandev-logo').animate(
-				{ opacity: 0.6 },
-				500,
-				function(){
-					$('h2#home-slogan').stop(true,false);
-					$('h2#home-slogan').animate({top: [375, 'swing'], opacity: 0.6}, 500, function(){
-						$('#home-urbandev-logo-glow').animate({opacity: 0.2},150, function(){
-							$(this).animate({opacity: 0.1},50).animate({opacity: 0.4},1000, function(){
-								udlogo.timer = setInterval(udlogo.pulse, 6000);									
-							});
-						});
-					});
-				});
-			},
-		pulse: function(){$('#home-urbandev-logo-glow').animate({opacity: 0.2},500).animate({opacity: 0.4},1000);}
-	};
-	urbanDev.logo.init();
-</script>
+	<h2 class="home-slogan">Website design and development solutions.</h2>
+	<a class="home-contact-me" href="#contact">
+		<span class="medium">Contact me</span>
+		<span class="small">I'm awesome.</span>
+	</a>
+	<a class="home-hosted-on-github external-link" href="https://github.com/Roach/roach.github.com">
+		Hosted on GitHub
+	</a>
+	<script type="text/javascript">
+			urbanDev.logo.init();
+	</script>

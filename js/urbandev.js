@@ -80,3 +80,13 @@ $('a.external-link').live('click', function (event) {
 	window.open(this.href, '_blank');
 	event.preventDefault();
 });
+
+$('a.mail-link').live('click', function (event) {
+	// TODO: Improve this method, it's ugly.
+	var mailTo = $(this).attr('href');
+	mailTo = mailTo.replace("[email]","mailto:");
+	mailTo = mailTo.replace("[at]","@");
+	mailTo = mailTo.replace("[dot]",".");
+	window.location.href = mailTo;
+	event.preventDefault();
+});

@@ -41,7 +41,7 @@ $(document).ajaxStart(function () {
 
 urbanDev.logo = {
 	timer: null,
-	init: function () {
+	initialize: function () {
 		var udlogo = this;
 		if (udlogo.timer) {
 			clearInterval(udlogo.timer);

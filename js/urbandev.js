@@ -73,7 +73,11 @@ urbanDev.logo = {
 };
 
 $(window).hashchange( function(){
-	urbanDev.loadContent(window.location.href);
+	if(!parseUri(window.location.href).anchor){
+		urbanDev.loadContent(window.location.href+"#home");
+	}else{
+		urbanDev.loadContent(window.location.href);
+	}
 });
 
 $('a.external-link').live('click', function (event) {

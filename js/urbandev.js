@@ -73,6 +73,7 @@ urbanDev.logo = {
 };
 
 $(window).hashchange( function(){
+	//TODO: utilize a better URI construction method.
 	if(!parseUri(window.location.href).anchor){
 		urbanDev.loadContent(window.location.href+"#home");
 	}else{
